@@ -32,19 +32,5 @@ spec:
    spec:
     containers:
      - name: nginx
-       image: {{ . values.deployment.imageVersion }}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx
-spec:
- selector:
-    project: roboshop
-    component: frontend
- ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
-
+       image: nginx:{{ . values.deployment.imageVersion }}
    
