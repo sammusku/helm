@@ -1,0 +1,2 @@
+deplyment:
+ replicas: "1"
