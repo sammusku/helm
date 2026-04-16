@@ -9,9 +9,9 @@ metadata:
    tier: frontend
    purpose: deployment-demo
   annotations:
-    kubernetes.io/change-cause: {{ .values.deployment.change-cause }}
+    kubernetes.io/change-cause: {{ .Values.deployment.changeCause }}
 spec:
-  replicas: {{ .values.deployment.replicas }}
+  replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
    #using this matching labels rs select pods to create/run
@@ -32,5 +32,5 @@ spec:
    spec:
     containers:
      - name: nginx
-       image: nginx:{{ . values.deployment.imageVersion }}
+       image: nginx:{{ .Values.deployment.imageVersion }}
    
