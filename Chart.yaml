@@ -1,5 +1,5 @@
 apiVersion: v2  #k8s related
 name: nginx   #chart name
-version: 0.0.1  #version of chart
-appVersion: latest   #application version like catalogue
+version: 0.0.2  #version of chart
+appVersion: l.29.8   #application version like catalogue
  
